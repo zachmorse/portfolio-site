@@ -1,0 +1,15 @@
+.firstName {
+  font-weight: 300;
+  position: relative;
+  top: 12rem;
+}
+
+.lastName {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  position: relative;
+  /* bottom: 29.8rem; */
+  /* left: 30.95rem; */
+  color: red;
+  font-weight: 300;
+}

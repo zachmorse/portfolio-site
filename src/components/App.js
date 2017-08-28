@@ -1,26 +1,14 @@
 import React, { Component } from "react";
-// import { BrowserRouter, Route, Switch } from "react-router-dom";
-
-import BaseLayout from "./Baselayout";
-import Home from "./Home";
-import Lander from "./Lander";
+import Header from "./Header";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Lander />
+        <Header />
       </div>
     );
   }
 }
 
 export default App;
-
-// <BrowserRouter>
-//   <BaseLayout>
-//     <Switch>
-//       <Route path="/" component={Lander} />
-//     </Switch>
-//   </BaseLayout>
-// </BrowserRouter>

@@ -4,7 +4,7 @@ export default class Lander extends Component {
   render() {
     let style = {
       lander: {
-        backgroundColor: "black",
+        backgroundColor: "#211e29",
         color: "white",
         height: "100vh",
         margin: "-1rem 0rem 0rem 0rem",
@@ -26,11 +26,13 @@ export default class Lander extends Component {
 
     return (
       <div style={style.lander}>
-        <div>
-          <h1 style={style.topline}>zach morse</h1>
-        </div>
-        <h3 style={style.midline}>wants to help you</h3>
-        <h1 style={style.bottomline}>make beautiful things</h1>
+        <h1 style={style.topline}>
+          ZACH MORSE <span style={style.midline}>wants to help you</span>
+          <span style={style.bottomline}> make beautiful things </span>
+        </h1>
+
+        {/* <h3 style={style.midline}>wants to help you</h3>
+        <h1 style={style.bottomline}>make beautiful things</h1> */}
       </div>
     );
   }
