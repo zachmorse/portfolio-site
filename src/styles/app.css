@@ -6,9 +6,9 @@ body {
 
 /* --- Mobile Breakpoints --- */
 
-@media screen and (min-width: 320px) and (max-width: 667px) {
+@media screen and (max-width: 667px) {
   .imgContainer {
-    background-image: url("./images/mobileBackground.jpg");
+    background-image: url("../images/mobileBackground.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@ body {
   }
 
   .imgContainer2 {
-    background-image: url("./images/mobileBackground.jpg");
+    background-image: url("../images/mobileBackground.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@ body {
     position: sticky;
     top: 0px;
     height: auto;
-    padding: 2rem 0rem;
+    padding: 2.5rem 0rem;
   }
 
   .navBoundary {
@@ -70,29 +70,30 @@ body {
     display: flex;
     flex-wrap: wrap;
     transform: rotate(45deg);
+    border: 2px solid black;
   }
 
   .navElement {
     background-color: red;
-    margin: 3px;
     text-align: center;
-    width: 47%;
-    margin: 1%;
     position: relative;
     z-index: 1;
+    margin: 2% 2% 2% 2%;
+    width: 16vw;
+    height: 16vw;
   }
 
   .elementText {
     transform: rotate(-45deg);
     position: relative;
-    left: 1px;
-    top: 12px;
+    left: 3px;
+    top: 4vw;
   }
 }
 
 @media screen and (min-width: 668px) and (max-width: 1024px) {
   .imgContainer {
-    background-image: url("./images/tabletBackground.jpg");
+    background-image: url("../images/tabletBackground.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,7 +115,7 @@ body {
 
 @media screen and (min-width: 1025px) {
   .imgContainer {
-    background-image: url("./images/mainBackground.jpg");
+    background-image: url("../images/mainBackground.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

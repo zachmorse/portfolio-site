@@ -1,16 +1,24 @@
 import React, { Component } from "react";
-import "../app.css";
+import "../styles/app.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Header from "./Header";
 import Mainlayout from "./Mainlayout";
+import Contact from "./Contact";
+import Work from "./Work";
 
 class App extends Component {
   render() {
     return (
       <div>
         <div>
-          <Header />
-          <Mainlayout />
+          <BrowserRouter>
+            <Mainlayout>
+              <Switch>
+                <Route path="/contact" component={Contact} />
+                <Route path="/work" component={Work} />
+              </Switch>
+            </Mainlayout>
+          </BrowserRouter>
         </div>
       </div>
     );
