@@ -13,11 +13,6 @@ export default class MainLayout extends Component {
         <div className="imgContainer2">
           <div className="navBox">
             <div className="navBoundary">
-              {/* <div className="navElement">
-                <NavLink to="/skills" className="elementText">
-                  Skills
-                </NavLink>
-              </div> */}
               <div className="navElement">
                 <NavLink to="/skills">
                   <Link to="/skills" className="elementText">
@@ -33,12 +28,6 @@ export default class MainLayout extends Component {
                   </Link>
                 </NavLink>
               </div>
-
-              {/* <div className="navElement">
-                <NavLink to="/contact" className="elementText">
-                  Contact
-                </NavLink>
-              </div> */}
 
               <div className="navElement">
                 <NavLink to="/contact">
