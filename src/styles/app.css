@@ -81,13 +81,14 @@ body {
     margin: 2% 2% 2% 2%;
     width: 16vw;
     height: 16vw;
+    overflow: hidden;
   }
 
   .elementText {
     transform: rotate(-45deg);
     position: relative;
-    left: 3px;
-    top: 4vw;
+    top: 6vw;
+    padding: 6vw 5vw;
   }
 }
 
