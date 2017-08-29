@@ -18,13 +18,75 @@ body {
     padding-bottom: 1rem;
   }
 
+  .imgContainer2 {
+    background-image: url("./images/mobileBackground.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+    filter: grayscale(100%);
+  }
+
   .textBlock {
-    font-size: 60px;
+    font-size: 40px;
     line-height: 1.1;
     font-weight: 700;
     letter-spacing: -2px;
     margin: 0;
     padding: 1rem;
+  }
+
+  .inlineLink {
+    text-decoration: none;
+    color: gray;
+  }
+
+  /* .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: auto;
+    position: sticky;
+    top: 0px;
+    background-color: transparent;
+  } */
+
+  .navBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    height: auto;
+    padding: 2rem 0rem;
+  }
+
+  .navBoundary {
+    width: 35vw;
+    height: 35vw;
+    display: flex;
+    flex-wrap: wrap;
+    transform: rotate(45deg);
+  }
+
+  .navElement {
+    background-color: red;
+    margin: 3px;
+    text-align: center;
+    width: 47%;
+    margin: 1%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .elementText {
+    transform: rotate(-45deg);
+    position: relative;
+    left: 1px;
+    top: 12px;
   }
 }
 
@@ -41,7 +103,7 @@ body {
   }
 
   .textBlock {
-    font-size: 90px;
+    font-size: 80px;
     line-height: 1.1;
     font-weight: 700;
     letter-spacing: -2px;
