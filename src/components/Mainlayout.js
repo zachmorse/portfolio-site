@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../styles/app.css";
 
 import Header from "./Header";
@@ -9,37 +9,22 @@ export default class MainLayout extends Component {
     return (
       <div>
         <Header />
-
         <div className="imgContainer2">
           <div className="navBox">
             <div className="navBoundary">
-              <div className="navElement">
-                <NavLink to="/skills">
-                  <Link to="/skills" className="elementText">
-                    Skills
-                  </Link>
-                </NavLink>
-              </div>
+              <NavLink to="/skills" className="navElement">
+                <span>Skills</span>
+              </NavLink>
 
-              <div className="navElement">
-                <NavLink to="/work">
-                  <Link to="/work" className="elementText">
-                    Work
-                  </Link>
-                </NavLink>
-              </div>
+              <NavLink to="/work" className="navElement">
+                <span>Work</span>
+              </NavLink>
 
-              <div className="navElement">
-                <NavLink to="/contact">
-                  <Link to="/contact" className="elementText">
-                    Contact
-                  </Link>
-                </NavLink>
-              </div>
+              <NavLink to="/contact" className="navElement">
+                <span>Contact</span>
+              </NavLink>
 
-              <div className="navElement">
-                <p className="elementText">Filler</p>
-              </div>
+              <NavLink to="/" className="navElement" />
             </div>
           </div>
         </div>
