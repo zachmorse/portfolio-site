@@ -31,7 +31,6 @@ body {
     min-height: 100vh;
     margin-top: -1rem;
     padding-bottom: 1rem;
-    /* filter: grayscale(100%); */
   }
 
   .textBlock {
@@ -66,6 +65,7 @@ body {
     top: 0px;
     height: auto;
     padding: 2.5rem 0rem;
+    margin-bottom: 1.5em;
   }
 
   .navBoundary {
@@ -76,6 +76,7 @@ body {
     transform: rotate(45deg);
     border: 3px solid gray;
     padding: 2px;
+    box-shadow: 1px 1px 15px 0px grey;
   }
 
   .navElement {
@@ -89,16 +90,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
   }
 
   .elementText {
     transform: rotate(-45deg);
-    align-items: center;
-    position: absolute;
     text-decoration: none;
-    color: black;
+    color: #e8e9ed;
+    font-size: 1.5em;
+    font-weight: 100;
   }
 }
+
+/* --- TABLET SIZING BELOW --- */
 
 @media screen and (min-width: 668px) and (max-width: 1024px) {
   .imgContainer {
@@ -121,6 +125,8 @@ body {
     padding: 1rem;
   }
 }
+
+/* --- DESKTOP SIZING BELOW --- */
 
 @media screen and (min-width: 1025px) {
   .imgContainer {

@@ -9,27 +9,41 @@ export default class MainLayout extends Component {
     return (
       <div>
         <Header />
-        <div className="imgContainer2">
+        <div className="imgContainer">
           <div className="navBox">
             <div className="navBoundary">
-              <NavLink to="/skills" className="navElement">
-                <span className="elementText">Skills</span>
-              </NavLink>
-
-              <NavLink to="/work" className="navElement">
-                <span className="elementText">Work</span>
-              </NavLink>
-
-              <NavLink to="/contact" className="navElement">
-                <span className="elementText">Contact</span>
-              </NavLink>
-
               <NavLink to="/" className="navElement" />
+              <NavLink
+                to="/work"
+                className="navElement"
+                activeStyle={{
+                  backgroundColor: "black",
+                  color: "#e8e9ed"
+                }}
+              >
+                <span className="elementText">W</span>
+              </NavLink>
+
+              <NavLink
+                to="/skills"
+                className="navElement"
+                activeStyle={{ backgroundColor: "black", color: "#e8e9ed" }}
+              >
+                <span className="elementText">S</span>
+              </NavLink>
+
+              <NavLink
+                to="/contact"
+                className="navElement"
+                activeStyle={{ backgroundColor: "black", color: "#e8e9ed" }}
+              >
+                <span className="elementText">C</span>
+              </NavLink>
             </div>
           </div>
-        </div>
-        <div>
-          {this.props.children}
+          <div className="contentArea">
+            {this.props.children}
+          </div>
         </div>
       </div>
     );
