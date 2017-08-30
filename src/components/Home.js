@@ -2,6 +2,6 @@ import React, { Component } from "react";
 
 export default class Home extends Component {
   render() {
-    return <div>Home section. do something with this</div>;
+    return <div>home page</div>;
   }
 }

@@ -4,6 +4,10 @@ body {
   font-family: Helvetica;
 }
 
+.homeGraphic {
+  width: 100vw;
+  height: 100vh;
+}
 /* --- Mobile Breakpoints --- */
 
 @media screen and (max-width: 667px) {
@@ -70,25 +74,29 @@ body {
     display: flex;
     flex-wrap: wrap;
     transform: rotate(45deg);
-    border: 2px solid black;
+    border: 3px solid gray;
+    padding: 2px;
   }
 
   .navElement {
-    background-color: red;
+    background-color: gray;
     text-align: center;
     position: relative;
     z-index: 1;
     margin: 2% 2% 2% 2%;
     width: 16vw;
     height: 16vw;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .elementText {
     transform: rotate(-45deg);
-    position: relative;
-    top: 6vw;
-    padding: 6vw 5vw;
+    align-items: center;
+    position: absolute;
+    text-decoration: none;
+    color: black;
   }
 }
 

@@ -13,15 +13,15 @@ export default class MainLayout extends Component {
           <div className="navBox">
             <div className="navBoundary">
               <NavLink to="/skills" className="navElement">
-                <span>Skills</span>
+                <span className="elementText">Skills</span>
               </NavLink>
 
               <NavLink to="/work" className="navElement">
-                <span>Work</span>
+                <span className="elementText">Work</span>
               </NavLink>
 
               <NavLink to="/contact" className="navElement">
-                <span>Contact</span>
+                <span className="elementText">Contact</span>
               </NavLink>
 
               <NavLink to="/" className="navElement" />
