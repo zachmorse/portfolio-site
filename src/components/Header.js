@@ -20,8 +20,9 @@ class Header extends Component {
           >
             clean code
           </a>{" "}
-          paired with minimalist, eye-catching emotional design. When not coding
-          I can be found making music, traveling, and hanging out with my {" "}
+          paired with minimalist, functional & eye-catching design. When not
+          coding I can be found making music, traveling, and hanging out with my{" "}
+          {" "}
           <a
             href="http://www.katebowenmusic.com/"
             target="_blank"
