@@ -41,6 +41,42 @@ export default class Work extends Component {
       }
     };
 
+    let sliderSettings = {
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      swipeToSlide: true,
+      swipe: true,
+      arrows: true,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 1084,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 667,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 0,
+            dots: true
+          }
+        }
+      ]
+    };
+
     let projects = projectData.map((details, index) => {
       return (
         <div style={style.projectContainer}>
@@ -89,8 +125,11 @@ export default class Work extends Component {
       );
     });
     return (
-      <div>
-        {projects}
+      <div style={{ textAlign: "center" }}>
+        {projects.length &&
+          <Slider {...sliderSettings}>
+            {projects}
+          </Slider>}
       </div>
     );
   }
