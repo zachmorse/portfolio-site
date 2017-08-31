@@ -10,7 +10,7 @@ export default class Home extends Component {
           Click links above to navigate.
         </div>
         <div style={{ paddingTop: "10vw" }}>
-          <img src={sailImage} />
+          <img src={sailImage} alt="" />
         </div>
       </div>
     );
