@@ -6,7 +6,7 @@ export default class Contact extends Component {
     return (
       <div className="portraitContainer">
         <div className="portrait" />
-        <div className="informationContainer">
+        <div>
           <p>
             307-630-2489 //{" "}
             <a

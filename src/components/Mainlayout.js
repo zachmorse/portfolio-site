@@ -12,7 +12,17 @@ export default class MainLayout extends Component {
         <div className="imgContainer">
           <div className="navBox">
             <div className="navBoundary">
-              <NavLink to="/" className="navElement" />
+              <NavLink
+                to="/home"
+                className="navElement"
+                activeStyle={{
+                  backgroundColor: "black",
+                  color: "#e8e9ed"
+                }}
+              >
+                <span className="elementText">home</span>
+              </NavLink>
+
               <NavLink
                 to="/work"
                 className="navElement"
@@ -21,7 +31,7 @@ export default class MainLayout extends Component {
                   color: "#e8e9ed"
                 }}
               >
-                <span className="elementText">W</span>
+                <span className="elementText">work</span>
               </NavLink>
 
               <NavLink
@@ -29,7 +39,7 @@ export default class MainLayout extends Component {
                 className="navElement"
                 activeStyle={{ backgroundColor: "black", color: "#e8e9ed" }}
               >
-                <span className="elementText">S</span>
+                <span className="elementText">skills</span>
               </NavLink>
 
               <NavLink
@@ -37,7 +47,7 @@ export default class MainLayout extends Component {
                 className="navElement"
                 activeStyle={{ backgroundColor: "black", color: "#e8e9ed" }}
               >
-                <span className="elementText">C</span>
+                <span className="elementText">contact</span>
               </NavLink>
             </div>
           </div>
