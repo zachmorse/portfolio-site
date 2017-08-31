@@ -2,6 +2,6 @@ import React, { Component } from "react";
 
 export default class Home extends Component {
   render() {
-    return <div>home page</div>;
+    return <div>home page. ADD SVG graphic here</div>;
   }
 }

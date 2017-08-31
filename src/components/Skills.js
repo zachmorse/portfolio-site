@@ -4,7 +4,7 @@ import "../styles/devicons.css";
 export default class Skills extends Component {
   render() {
     return (
-      <div>
+      <div className="overflowHandler">
         <div className="skillContainer">
           <div className="skill">
             <svg viewBox="0 0 128 128">
