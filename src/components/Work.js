@@ -8,26 +8,20 @@ export default class Work extends Component {
   render() {
     let sliderSettings = {
       speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToShow: 1,
+      slidesToScroll: 1,
       swipeToSlide: true,
       swipe: true,
       arrows: true,
       dots: true,
       responsive: [
         {
-          breakpoint: 1084,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 667,
+          breakpoint: 1024,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            initialSlide: 0
+            initialSlide: 0,
+            dots: true
           }
         },
         {

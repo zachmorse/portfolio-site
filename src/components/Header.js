@@ -5,12 +5,11 @@ class Header extends Component {
   render() {
     return (
       <div>
-        {/* <div className="imgContainer"> */}
         <p className="textBlock">
           Hi, my name is Zach Morse. I'm a developer and web designer based in
           Nashville TN.
         </p>
-        <p className="textBlock">
+        <p className="textBlock2">
           I am interested in modular, efficient,{" "}
           <a
             href="https://github.com/zachmorse"
@@ -42,7 +41,6 @@ class Header extends Component {
           </a>. Thank you.
         </p>
       </div>
-      // </div>
     );
   }
 }

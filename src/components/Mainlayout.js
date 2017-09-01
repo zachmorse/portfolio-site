@@ -7,8 +7,10 @@ import Header from "./Header";
 export default class MainLayout extends Component {
   render() {
     return (
-      <div className="imgContainer">
-        <Header />
+      <div>
+        <div className="imgContainer">
+          <Header />
+        </div>
         <div className="imgContainer">
           <div className="navBox">
             <div className="navBoundary">

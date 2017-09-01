@@ -190,6 +190,13 @@ a {
     font-size: 0.8em;
     margin: 1vw 0vw 2vw 0vw;
   }
+  .imgCenter {
+    padding-top: 10vw;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+  }
 }
 
 /*--------------------------------------*/
@@ -219,6 +226,16 @@ a {
     padding: 1rem;
   }
 
+  .textBlock2 {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin: 0;
+    padding: 1rem;
+    padding-bottom: 3rem;
+  }
+
   .navBox {
     position: sticky;
     top: 0px;
@@ -228,7 +245,7 @@ a {
   }
 
   .navBoundary {
-    width: 100vw;
+    width: 95vw;
     display: -ms-flexbox;
     display: flex;
   }
@@ -315,7 +332,11 @@ a {
   }
 }
 
-/* --- DESKTOP SIZING BELOW --- */
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------- Desktop Breakpoints --------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
 
 @media screen and (min-width: 1025px) {
   .imgContainer {
@@ -336,5 +357,125 @@ a {
     letter-spacing: -2px;
     margin: 0;
     padding: 1rem;
+  }
+
+  .textBlock2 {
+    font-size: 120px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin: 0;
+    padding: 1rem;
+    padding-bottom: 6rem;
+  }
+
+  .navBox {
+    position: sticky;
+    top: 0px;
+    height: auto;
+    z-index: 2;
+    margin-top: 0rem;
+  }
+
+  .navBoundary {
+    width: 98vw;
+    display: flex;
+  }
+
+  .navElement {
+    font-size: 2.5em;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .elementText {
+    transform: rotate(-45deg);
+    text-decoration: none;
+    color: #e8e9ed;
+    font-size: 0.75em;
+    font-weight: 100;
+  }
+
+  .contentArea {
+    width: 97vw;
+  }
+
+  .informationContainer {
+    visibility: hidden;
+    display: flex;
+  }
+
+  .imgCenter {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .homepageGraphic {
+    width: 45vw;
+    height: 45vw;
+    transform: rotate(90deg);
+    position: relative;
+    bottom: 10vw;
+  }
+
+  .projectCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+  }
+
+  .imageCard {
+    width: 50vw;
+    box-shadow: 1px 1px 10px 1px grey;
+    transition: all 0.2s ease;
+  }
+
+  .projectDescription {
+    width: 60vw;
+    margin-bottom: 0;
+  }
+
+  .slick-track {
+    margin-bottom: -2vw;
+  }
+
+  .skillContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .skillContainer {
+    padding: 0rem;
+    margin: 6vw 15vw;
+  }
+
+  .skill {
+    width: 10vw;
+    margin: 2vw;
+  }
+
+  .portraitContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vw;
+  }
+
+  .portrait {
+    width: 40vw;
+    height: 40vw;
+    background-image: url("../images/headshot.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 3vw;
+    box-shadow: 1px 1px 10px 1px grey;
   }
 }
