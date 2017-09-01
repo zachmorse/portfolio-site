@@ -150,6 +150,45 @@ a {
     justify-content: center;
     text-align: center;
   }
+
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imageCard {
+    width: 80vw;
+    box-shadow: 1px 1px 10px 1px grey;
+    transition: all 0.2s ease;
+  }
+
+  .projectName {
+    margin-bottom: 0;
+  }
+
+  .projectDescription {
+    padding: 0 12vw;
+    margin: 0;
+    font-size: 0.8em;
+  }
+
+  .tools {
+    font-size: 0.9em;
+  }
+
+  .projectLinks {
+    font-size: 0.8em;
+    margin: 1vw 0vw 2vw 0vw;
+  }
 }
 
 /*--------------------------------------*/
