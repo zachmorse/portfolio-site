@@ -9,7 +9,7 @@ export default class Home extends Component {
         <div className="informationContainer">
           Click links above to navigate.
         </div>
-        <div style={{ paddingTop: "10vw" }}>
+        <div style={{ paddingTop: "10vw" }} className="imgCenter">
           <img src={sailImage} alt="" className="homepageGraphic" />
         </div>
       </div>

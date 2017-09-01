@@ -53,20 +53,20 @@ export default class Work extends Component {
         {
           breakpoint: 1084,
           settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
+            slidesToShow: 1,
+            slidesToScroll: 1
           }
         },
         {
           breakpoint: 667,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 0
+          }
+        },
+        {
+          breakpoint: 666,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,

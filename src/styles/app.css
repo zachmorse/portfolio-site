@@ -209,6 +209,16 @@ a {
   .informationContainer {
     visibility: hidden;
   }
+
+  .homepageGraphic {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .imgCenter {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* --- DESKTOP SIZING BELOW --- */
