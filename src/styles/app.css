@@ -23,9 +23,13 @@ a {
   text-decoration: none;
 }
 
-/* --- Mobile Breakpoints --- */
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------- Mobile Breakpoints ---------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
 
-@media screen and (min-width: 320px) and (max-width: 667px) {
+@media screen and (min-width: 320px) and (max-width: 666px) {
   .imgContainer {
     background-image: url("../images/mobileBackground.jpg");
     background-attachment: fixed;
@@ -83,11 +87,15 @@ a {
     margin: 2.5%;
     width: 11.2vw;
     height: 11.2vw;
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+  }
+
+  navElement:activeStyle {
+    background-color: black;
+    color: #e8e9ed;
   }
 
   .elementText {
@@ -142,15 +150,17 @@ a {
     justify-content: center;
     text-align: center;
   }
-
-  /* --- Work section here --- */
 }
 
-/* --- TABLET SIZING BELOW --- */
+/*--------------------------------------*/
+/*--------------------------------------*/
+/*--------- Tablet Breakpoints ---------*/
+/*--------------------------------------*/
+/*--------------------------------------*/
 
-@media screen and (min-width: 668px) and (max-width: 1024px) {
+@media screen and (min-width: 667px) and (max-width: 1024px) {
   .imgContainer {
-    background-image: url("../images/tabletBackground.jpg");
+    background-image: url("../images/tabletBackground2.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,12 +171,43 @@ a {
   }
 
   .textBlock {
-    font-size: 80px;
+    font-size: 60px;
     line-height: 1.1;
     font-weight: 700;
     letter-spacing: -2px;
     margin: 0;
     padding: 1rem;
+  }
+
+  .navBox {
+    position: sticky;
+    top: 0px;
+    height: auto;
+    z-index: 2;
+    margin-top: 0rem;
+  }
+
+  .navBoundary {
+    width: 100vw;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .navElement {
+    font-size: 2.5em;
+    margin: 1rem 1rem 1rem 1rem;
+  }
+
+  .elementText {
+    transform: rotate(-45deg);
+    text-decoration: none;
+    color: #e8e9ed;
+    font-size: 0.75em;
+    font-weight: 100;
+  }
+
+  .informationContainer {
+    visibility: hidden;
   }
 }
 
