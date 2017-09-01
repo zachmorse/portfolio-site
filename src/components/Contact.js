@@ -17,7 +17,7 @@ export default class Contact extends Component {
               zacharymorse@gmail.com
             </a>
           </p>
-          <p>
+          <p style={{ textAlign: "center" }}>
             <a href="https://www.google.com/">resume</a> <span>//</span>{" "}
             <a href="https://github.com/zachmorse">github</a> <span>//</span>{" "}
             <a href="https://www.linkedin.com/in/zachmorse/">linkedin</a>

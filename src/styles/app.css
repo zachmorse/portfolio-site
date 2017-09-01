@@ -143,6 +143,7 @@ a {
     background-repeat: no-repeat;
     background-size: 100%;
     margin-bottom: 3vw;
+    box-shadow: 1px 1px 10px 1px grey;
   }
 
   .informationContainer {
@@ -257,6 +258,60 @@ a {
   .imgCenter {
     display: flex;
     justify-content: center;
+  }
+
+  .projectCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vw;
+  }
+
+  .imageCard {
+    width: 60vw;
+    box-shadow: 1px 1px 10px 1px grey;
+    transition: all 0.2s ease;
+  }
+
+  .projectDescription {
+    width: 70vw;
+    margin-bottom: 0;
+  }
+
+  .slick-track {
+    margin-bottom: -2vw;
+  }
+
+  .skillContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .skill {
+    width: 14vw;
+    margin: 4vw;
+  }
+
+  .portraitContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vw;
+  }
+
+  .portrait {
+    width: 40vw;
+    height: 40vw;
+    background-image: url("../images/headshot.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 3vw;
+    box-shadow: 1px 1px 10px 1px grey;
   }
 }
 
