@@ -50,6 +50,15 @@ a {
     padding: 1rem;
   }
 
+  .textBlock2 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin: 0;
+    padding: 1rem;
+  }
+
   .inlineLink {
     text-decoration: none;
     color: gray;
