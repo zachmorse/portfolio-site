@@ -2,17 +2,9 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/app.css";
 
-import Header from "./Header";
-
 export default class MainLayout extends Component {
   render() {
     const MediaQuery = require("react-responsive");
-    const style = {
-      linkStyle: {
-        color: "black",
-        backgroundColor: "black"
-      }
-    };
 
     return (
       <div>

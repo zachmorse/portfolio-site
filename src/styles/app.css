@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+.slick-arrow {
+  visibility: hidden;
+}
+
 /*--------------------------------------*/
 /*--------------------------------------*/
 /*--------- Mobile Breakpoints ---------*/
@@ -454,6 +458,8 @@ a {
   .contentArea {
     width: 97vw;
     height: 47vw;
+    position: relative;
+    left: 1vw;
   }
 
   .informationContainer {

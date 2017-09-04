@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-
 import Header from "./Header";
-import sailImage from "../images/SpaceSail.svg";
 import "../styles/app.css";
+
+// import sailImage from "../images/SpaceSail.svg";
 
 export default class Home extends Component {
   render() {

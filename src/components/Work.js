@@ -12,7 +12,6 @@ export default class Work extends Component {
       slidesToScroll: 1,
       swipeToSlide: true,
       swipe: true,
-      arrows: true,
       dots: true,
       infinite: true,
       responsive: [
@@ -22,8 +21,7 @@ export default class Work extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             initialSlide: 0,
-            dots: true,
-            arrows: true
+            dots: true
           }
         },
         {
@@ -32,8 +30,7 @@ export default class Work extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             initialSlide: 0,
-            dots: true,
-            arrows: true
+            dots: true
           }
         }
       ]
