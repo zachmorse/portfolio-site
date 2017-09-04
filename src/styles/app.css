@@ -42,7 +42,7 @@ a {
   }
 
   .textBlock {
-    font-size: 40px;
+    font-size: 50px;
     line-height: 1.1;
     font-weight: 700;
     letter-spacing: -2px;
@@ -100,11 +100,6 @@ a {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-  }
-
-  navElement:activeStyle {
-    background-color: black;
-    color: #e8e9ed;
   }
 
   .elementText {

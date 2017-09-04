@@ -6,21 +6,25 @@ import Header from "./Header";
 
 export default class MainLayout extends Component {
   render() {
+    const style = {
+      linkStyle: {
+        color: "black",
+        backgroundColor: "black"
+      }
+    };
+
     return (
       <div>
-        <div className="imgContainer">
+        {/* <div className="imgContainer">
           <Header />
-        </div>
+        </div> */}
         <div className="imgContainer">
           <div className="navBox">
             <div className="navBoundary">
               <NavLink
                 to="/home"
                 className="navElement"
-                activeStyle={{
-                  backgroundColor: "black",
-                  color: "#e8e9ed"
-                }}
+                activeStyle={{ backgroundColor: "black", color: "#e8e9ed" }}
               >
                 <span className="elementText">home</span>
               </NavLink>
@@ -28,10 +32,7 @@ export default class MainLayout extends Component {
               <NavLink
                 to="/work"
                 className="navElement"
-                activeStyle={{
-                  backgroundColor: "black",
-                  color: "#e8e9ed"
-                }}
+                activeStyle={{ backgroundColor: "black", color: "#e8e9ed" }}
               >
                 <span className="elementText">work</span>
               </NavLink>
@@ -53,9 +54,7 @@ export default class MainLayout extends Component {
               </NavLink>
             </div>
           </div>
-          <div className="contentArea">
-            {this.props.children}
-          </div>
+          <div className="contentArea">{this.props.children}</div>
         </div>
       </div>
     );

@@ -1,17 +1,30 @@
 import React, { Component } from "react";
 
+import Header from "./Header";
 import sailImage from "../images/SpaceSail.svg";
+import "../styles/app.css";
 
 export default class Home extends Component {
   render() {
     return (
       <div>
-        <div className="informationContainer">
+        {/* <div className="informationContainer">
           Click links above to navigate.
-        </div>
-        <div style={{ paddingTop: "10vw" }} className="imgCenter">
+        </div> */}
+
+        {/* <div
+          style={{ paddingTop: "10vw", position: "fixed" }}
+          className="imgCenter"
+        >
           <img src={sailImage} alt="" className="homepageGraphic" />
-        </div>
+        </div> */}
+
+        <Header />
+
+        {/* <div className="textblock">
+          <p>Zach Morse</p>
+          <p>Web Developer // Nashville, TN</p>
+        </div> */}
       </div>
     );
   }
