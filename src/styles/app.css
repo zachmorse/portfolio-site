@@ -100,14 +100,16 @@ a {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    color: #e8e9ed;
   }
 
   .elementText {
     transform: rotate(-45deg);
     text-decoration: none;
-    color: #e8e9ed;
+
     font-size: 0.75em;
     font-weight: 100;
+    color: inherit;
   }
 
   .contentArea {
@@ -257,14 +259,16 @@ a {
   .navElement {
     font-size: 2.5em;
     margin: 1rem 1rem 1rem 1rem;
+    color: #e8e9ed;
   }
 
   .elementText {
     transform: rotate(-45deg);
     text-decoration: none;
-    color: #e8e9ed;
+    color: white;
     font-size: 0.75em;
     font-weight: 100;
+    color: inherit;
   }
 
   .informationContainer {
@@ -389,6 +393,7 @@ a {
   .navElement {
     font-size: 2.5em;
     margin: 1rem 1rem 1rem 1rem;
+    color: #e8e9ed;
   }
 
   .elementText {
@@ -397,6 +402,7 @@ a {
     color: #e8e9ed;
     font-size: 0.75em;
     font-weight: 100;
+    color: inherit;
   }
 
   .contentArea {
