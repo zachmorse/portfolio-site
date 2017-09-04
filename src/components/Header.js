@@ -4,7 +4,7 @@ import "../styles/app.css";
 class Header extends Component {
   render() {
     return (
-      <div style={{ overflow: "scroll" }}>
+      <div>
         <p className="textBlock">
           Hi, my name is Zach Morse. I'm a developer and web designer based in
           Nashville TN.

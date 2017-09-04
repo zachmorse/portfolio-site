@@ -8,10 +8,6 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        {/* <div className="informationContainer">
-          Click links above to navigate.
-        </div> */}
-
         {/* <div
           style={{ paddingTop: "10vw", position: "fixed" }}
           className="imgCenter"
@@ -20,11 +16,6 @@ export default class Home extends Component {
         </div> */}
 
         <Header />
-
-        {/* <div className="textblock">
-          <p>Zach Morse</p>
-          <p>Web Developer // Nashville, TN</p>
-        </div> */}
       </div>
     );
   }

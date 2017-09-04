@@ -74,6 +74,11 @@ a {
     padding: 2.5rem 0rem;
     margin-bottom: 1.5em;
     z-index: 2;
+    background-image: url("../images/mobileBackground.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .navBoundary {
@@ -162,6 +167,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
   }
 
   .projectCard {
@@ -186,6 +192,13 @@ a {
     padding: 0 12vw;
     margin: 0;
     font-size: 0.8em;
+  }
+
+  .slick-dots {
+    display: block;
+    position: relative;
+    z-index: 0;
+    bottom: 0rem;
   }
 
   .tools {
@@ -224,11 +237,11 @@ a {
   }
 
   .textBlock {
-    font-size: 60px;
+    font-size: 80px;
     line-height: 1.1;
     font-weight: 700;
     letter-spacing: -2px;
-    margin: 0;
+    margin: 10vw 0 0 0;
     padding: 1rem;
   }
 
@@ -248,6 +261,15 @@ a {
     height: auto;
     z-index: 2;
     margin-top: 0rem;
+    background-image: url("../images/tabletBackground2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .contentArea {
+    overflow: hidden;
   }
 
   .navBoundary {
@@ -260,6 +282,7 @@ a {
     font-size: 2.5em;
     margin: 1rem 1rem 1rem 1rem;
     color: #e8e9ed;
+    background-color: transparent;
   }
 
   .elementText {
@@ -285,12 +308,21 @@ a {
     justify-content: center;
   }
 
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
   .projectCard {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     margin-top: 3vw;
+    position: relative;
+    left: 1vw;
   }
 
   .imageCard {
@@ -306,6 +338,13 @@ a {
 
   .slick-track {
     margin-bottom: -2vw;
+  }
+
+  .slick-dots {
+    display: block;
+    position: relative;
+    z-index: 0;
+    bottom: 0rem;
   }
 
   .skillContainer {
@@ -365,6 +404,7 @@ a {
     letter-spacing: -2px;
     margin: 0;
     padding: 1rem;
+    padding-top: 5vw;
   }
 
   .textBlock2 {
@@ -383,6 +423,11 @@ a {
     height: auto;
     z-index: 2;
     margin-top: 0rem;
+    background-image: url("../images/mainBackground.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .navBoundary {
@@ -394,6 +439,7 @@ a {
     font-size: 2.5em;
     margin: 1rem 1rem 1rem 1rem;
     color: #e8e9ed;
+    background-color: transparent;
   }
 
   .elementText {
@@ -407,6 +453,7 @@ a {
 
   .contentArea {
     width: 97vw;
+    height: 47vw;
   }
 
   .informationContainer {
@@ -429,6 +476,13 @@ a {
     bottom: 10vw;
   }
 
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
   .projectCard {
     display: flex;
     justify-content: center;
@@ -436,6 +490,8 @@ a {
     align-items: center;
     margin-top: 3vw;
     margin-bottom: 2vw;
+    position: relative;
+    left: 1vw;
   }
 
   .imageCard {
@@ -453,6 +509,13 @@ a {
     margin-bottom: -2vw;
   }
 
+  .slick-dots {
+    display: block;
+    position: relative;
+    z-index: 0;
+    bottom: 0rem;
+  }
+
   .skillContainer {
     display: flex;
     flex-direction: row;
@@ -463,7 +526,7 @@ a {
 
   .skillContainer {
     padding: 0rem;
-    margin: 6vw 15vw;
+    margin: 3vw 15vw 0vw 15vw;
   }
 
   .skill {
@@ -485,7 +548,7 @@ a {
     background-image: url("../images/headshot.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    margin-bottom: 3vw;
+    margin-bottom: 1vw;
     box-shadow: 1px 1px 10px 1px grey;
   }
 }

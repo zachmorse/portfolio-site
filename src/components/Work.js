@@ -14,23 +14,26 @@ export default class Work extends Component {
       swipe: true,
       arrows: true,
       dots: true,
+      infinite: true,
       responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            initialSlide: 0,
-            dots: true
-          }
-        },
         {
           breakpoint: 666,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
             initialSlide: 0,
-            dots: true
+            dots: true,
+            arrows: true
+          }
+        },
+        {
+          breakpoint: 1025,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 0,
+            dots: true,
+            arrows: true
           }
         }
       ]
@@ -42,9 +45,7 @@ export default class Work extends Component {
           <div className="projectCard" key={details.id}>
             <img src={details.imageLink} alt="" className="imageCard" />
 
-            <h3 className="projectName">
-              {details.name}
-            </h3>
+            <h3 className="projectName">{details.name}</h3>
 
             <span className="projectLinks">
               <a
@@ -64,22 +65,15 @@ export default class Work extends Component {
               </a>
             </span>
 
-            <p className="projectDescription">
-              {details.description}
-            </p>
-            <p className="projectLinks">
-              Built with: {details.tools}
-            </p>
+            <p className="projectDescription">{details.description}</p>
+            <p className="projectLinks">Built with: {details.tools}</p>
           </div>
         </div>
       );
     });
     return (
       <div style={{ textAlign: "center" }}>
-        {projects.length &&
-          <Slider {...sliderSettings}>
-            {projects}
-          </Slider>}
+        <Slider {...sliderSettings}>{projects}</Slider>
       </div>
     );
   }

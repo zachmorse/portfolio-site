@@ -62,7 +62,10 @@ export default class MainLayout extends Component {
                 <NavLink
                   to="/home"
                   className="navElement"
-                  activeStyle={{ color: "gray" }}
+                  activeStyle={{
+                    backgroundColor: "transparent",
+                    color: "gray"
+                  }}
                 >
                   <span className="elementText">home</span>
                 </NavLink>
@@ -70,7 +73,10 @@ export default class MainLayout extends Component {
                 <NavLink
                   to="/work"
                   className="navElement"
-                  activeStyle={{ color: "gray" }}
+                  activeStyle={{
+                    backgroundColor: "transparent",
+                    color: "gray"
+                  }}
                 >
                   <span className="elementText">work</span>
                 </NavLink>
@@ -78,7 +84,10 @@ export default class MainLayout extends Component {
                 <NavLink
                   to="/skills"
                   className="navElement"
-                  activeStyle={{ color: "gray" }}
+                  activeStyle={{
+                    backgroundColor: "transparent",
+                    color: "gray"
+                  }}
                 >
                   <span className="elementText">skills</span>
                 </NavLink>
@@ -86,7 +95,10 @@ export default class MainLayout extends Component {
                 <NavLink
                   to="/contact"
                   className="navElement"
-                  activeStyle={{ color: "gray" }}
+                  activeStyle={{
+                    backgroundColor: "transparent",
+                    color: "gray"
+                  }}
                 >
                   <span className="elementText">contact</span>
                 </NavLink>
