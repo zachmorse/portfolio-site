@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <div>
         <p className="textBlock">
-          Hi, my name is Zach Morse. I'm a developer and web designer based in
+          Hi, my name is Zach Morse. I'm a web developer and designer based in
           Nashville TN.
         </p>
         {/* <p className="textBlock2">
