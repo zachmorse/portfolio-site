@@ -7,11 +7,8 @@ export default class MainLayout extends Component {
     const MediaQuery = require("react-responsive");
 
     return (
-      <div>
-        {/* <div className="imgContainer">
-          <Header />
-        </div> */}
-        <div className="imgContainer">
+      <div className="imgContainer">
+        <div>
           <div className="navBox">
             <MediaQuery maxDeviceWidth={666}>
               <div className="navBoundary">
@@ -97,6 +94,7 @@ export default class MainLayout extends Component {
               </div>
             </MediaQuery>
           </div>
+
           <div className="contentArea">{this.props.children}</div>
         </div>
       </div>

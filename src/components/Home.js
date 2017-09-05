@@ -4,6 +4,8 @@ import "../styles/app.css";
 
 // import sailImage from "../images/SpaceSail.svg";
 
+window.scrollTo(0, 0);
+
 export default class Home extends Component {
   render() {
     return (

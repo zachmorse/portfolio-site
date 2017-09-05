@@ -32,3 +32,14 @@ const projectData = [
 ];
 
 export default projectData;
+
+// {
+//   id: 4,
+//   name: "Message Terminal",
+//   imageLink: "https://i.imgur.com/FxHaIry.png",
+//   description:
+//     "Message Terminal is a messaging app built in Node.js. It uses a PostgreSQL database, which is managed with Sequelize within the node app.",
+//   tools: "Node.js // Sequelize // PostgreSQL // Mustache",
+//   github: "https://github.com/zachmorse/TIY-week-seven-project",
+//   liveLink: "http://messageterminal.herokuapp.com/"
+// }
