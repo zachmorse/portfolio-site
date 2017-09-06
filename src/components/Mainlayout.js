@@ -7,7 +7,7 @@ export default class MainLayout extends Component {
     const MediaQuery = require("react-responsive");
 
     return (
-      <div className="imgContainer">
+      <div>
         <div>
           <div className="navBox">
             <MediaQuery maxDeviceWidth={666}>

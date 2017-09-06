@@ -1,11 +1,23 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+/*--------------------------------------*/
+/*--------- Starting Design & ----------*/
+/*--------- Initial Settings -----------*/
+/*--------------------------------------*/
+
 body {
   margin: 0;
   padding: 0;
   font-family: Helvetica;
   min-width: 320px;
+  background-image: url("../images/mobileBackground.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -1rem;
 }
 
 a {
@@ -27,37 +39,114 @@ a {
   visibility: hidden;
 }
 
+.textBlock {
+  font-size: 50px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+.textBlock2 {
+  font-size: 6vw;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin: 0;
+  padding: 0rem 1rem 3rem 1rem;
+}
+
+.inlineLink {
+  text-decoration: none;
+  color: gray;
+}
+
+.navBox {
+  position: sticky;
+  top: 0px;
+  height: auto;
+  z-index: 2;
+  margin-top: 0rem;
+  background-color: transparent;
+}
+
+.navElement {
+  font-size: 2.5em;
+  margin: 1rem 1rem 1rem 1rem;
+  color: #e8e9ed;
+  background-color: transparent;
+  font-size: 1em;
+}
+
+.elementText {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 100;
+  color: inherit;
+}
+
+.skillContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 0rem 2rem;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.portraitContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3vw;
+}
+
+.portrait {
+  width: 40vw;
+  height: 40vw;
+  background-image: url("../images/headshot.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: 1px 1px 10px 1px grey;
+  margin-top: 0;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.imageCard {
+  box-shadow: 1px 1px 10px 1px grey;
+  transition: all 0.2s ease;
+}
+
+.slick-dots {
+  display: block;
+  position: relative;
+  z-index: 0;
+  bottom: 0rem;
+}
+
 /*--------------------------------------*/
 /*--------------------------------------*/
-/*--------- Mobile Breakpoints ---------*/
+/*------- Mobile Layout Changes --------*/
 /*--------------------------------------*/
 /*--------------------------------------*/
 
 @media screen and (min-width: 320px) and (max-width: 666px) {
-  .imgContainer {
-    background-image: url("../images/mobileBackground.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    margin-top: -1rem;
-    padding-bottom: 1rem;
-  }
-
-  .textBlock {
-    font-size: 50px;
-    line-height: 1.1;
-    font-weight: 700;
-    letter-spacing: -2px;
-    margin: 0;
-    padding: 1rem;
-  }
-
-  .textBlock2 {
-    visibility: hidden;
-  }
-
   .textParallaxOne {
     margin-bottom: -5vw;
   }
@@ -66,26 +155,12 @@ a {
     visibility: hidden;
   }
 
-  .inlineLink {
-    text-decoration: none;
-    color: gray;
-  }
-
   .navBox {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
-    top: 0px;
-    height: auto;
     padding: 2.5rem 0rem;
     margin-bottom: 1.5em;
-    z-index: 2;
-    background-image: url("../images/mobileBackground.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .navBoundary {
@@ -112,16 +187,15 @@ a {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #e8e9ed;
+  }
+
+  .textBlock2 {
+    visibility: hidden;
   }
 
   .elementText {
     transform: rotate(-45deg);
-    text-decoration: none;
-
     font-size: 0.75em;
-    font-weight: 100;
-    color: inherit;
   }
 
   .contentArea {
@@ -133,66 +207,22 @@ a {
     overflow: hidden;
   }
 
-  .skillContainer {
-    display: flex;
-    flex-direction: row;
-    padding: 0rem 2rem;
-    flex-wrap: wrap;
-    overflow: hidden;
-    justify-content: center;
-  }
-
   .skill {
     flex: 0 0 25%;
     padding: 2vw;
   }
 
   .portraitContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 0;
   }
 
   .portrait {
     width: 80vw;
     height: 80vw;
-    background-image: url("../images/headshot.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-bottom: 3vw;
-    box-shadow: 1px 1px 10px 1px grey;
-  }
-
-  .informationContainer {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .projectContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  .projectCard {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
 
   .imageCard {
     width: 80vw;
-    box-shadow: 1px 1px 10px 1px grey;
-    transition: all 0.2s ease;
-  }
-
-  .projectName {
-    margin-bottom: 0;
   }
 
   .projectDescription {
@@ -201,27 +231,9 @@ a {
     font-size: 0.8em;
   }
 
-  .slick-dots {
-    display: block;
-    position: relative;
-    z-index: 0;
-    bottom: 0rem;
-  }
-
-  .tools {
-    font-size: 0.9em;
-  }
-
   .projectLinks {
     font-size: 0.8em;
     margin: 1vw 0vw 2vw 0vw;
-  }
-  .imgCenter {
-    padding-top: 10vw;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: 50vh;
   }
 }
 
@@ -232,50 +244,18 @@ a {
 /*--------------------------------------*/
 
 @media screen and (min-width: 667px) and (max-width: 1024px) {
-  .imgContainer {
+  body {
     background-image: url("../images/tabletBackground2.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    margin-top: -1rem;
-    padding-bottom: 1rem;
   }
 
   .textBlock {
     font-size: 10vw;
-    line-height: 1.1;
-    font-weight: 700;
-    letter-spacing: -2px;
     margin: 10vw 0 0 0;
     padding: 1rem;
   }
 
-  .textBlock2 {
-    font-size: 6vw;
-    line-height: 1.1;
-    font-weight: 700;
-    letter-spacing: -2px;
-    margin: 0;
-    padding: 0rem 1rem 3rem 1rem;
-  }
-
   .scrollbtn {
     margin-bottom: 20vw;
-  }
-
-  .navBox {
-    position: sticky;
-    top: 0px;
-    height: auto;
-    z-index: 2;
-    margin-top: 0rem;
-    background-image: url("../images/tabletBackground2.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .contentArea {
@@ -288,48 +268,7 @@ a {
     display: flex;
   }
 
-  .navElement {
-    font-size: 2.5em;
-    margin: 1rem 1rem 1rem 1rem;
-    color: #e8e9ed;
-    background-color: transparent;
-  }
-
-  .elementText {
-    transform: rotate(-45deg);
-    text-decoration: none;
-    color: white;
-    font-size: 0.75em;
-    font-weight: 100;
-    color: inherit;
-  }
-
-  .informationContainer {
-    visibility: hidden;
-  }
-
-  .homepageGraphic {
-    width: 60vw;
-    height: 60vw;
-  }
-
-  .imgCenter {
-    display: flex;
-    justify-content: center;
-  }
-
-  .projectContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-  }
-
   .projectCard {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     margin-top: 3vw;
     position: relative;
     left: 1vw;
@@ -337,8 +276,6 @@ a {
 
   .imageCard {
     width: 60vw;
-    box-shadow: 1px 1px 10px 1px grey;
-    transition: all 0.2s ease;
   }
 
   .projectDescription {
@@ -350,19 +287,9 @@ a {
     margin-bottom: -2vw;
   }
 
-  .slick-dots {
-    display: block;
-    position: relative;
-    z-index: 0;
-    bottom: 0rem;
-  }
-
   .skillContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 2rem;
+    overflow: visible;
   }
 
   .skill {
@@ -370,22 +297,10 @@ a {
     margin: 4vw;
   }
 
-  .portraitContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3vw;
-  }
-
   .portrait {
-    width: 40vw;
-    height: 40vw;
-    background-image: url("../images/headshot.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-bottom: 3vw;
-    box-shadow: 1px 1px 10px 1px grey;
+    margin-top: 3vw;
+    width: 60vw;
+    height: 60vw;
   }
 }
 
@@ -398,82 +313,25 @@ a {
 @media screen and (min-width: 1025px) {
   body {
     background-image: url("../images/mainBackground.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    min-height: 100vh;
-    margin-top: -1rem;
-    /* padding-bottom: 1rem; */
-  }
-
-  .imgContainer {
-    background-image: url("../images/mainBackground.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100vw;
-    min-height: 100vh;
-    margin-top: -1rem;
-    padding-bottom: 1rem;
   }
 
   .textBlock {
     font-size: 8.5vw;
-    line-height: 1.1;
-    font-weight: 700;
-    letter-spacing: -2px;
-    margin: 0;
-    padding: 1rem;
-    padding-top: 5vw;
+    padding: 5vw 1rem 1rem 1rem;
   }
 
   .textBlock2 {
     font-size: 5.25vw;
-    line-height: 1.1;
-    font-weight: 700;
-    letter-spacing: -2px;
-    margin: 0;
-    padding: 1rem;
-    padding-bottom: 6rem;
+    padding: 1rem 1rem 6rem 1rem;
   }
 
   .textParallaxOne {
     margin-bottom: 5vw;
   }
 
-  .navBox {
-    position: sticky;
-    top: 0px;
-    height: auto;
-    z-index: 2;
-    margin-top: 0rem;
-    background-image: url("../images/mainBackground.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
   .navBoundary {
     width: 98vw;
     display: flex;
-  }
-
-  .navElement {
-    font-size: 2.5em;
-    margin: 1rem 1rem 1rem 1rem;
-    color: #e8e9ed;
-    background-color: transparent;
-  }
-
-  .elementText {
-    transform: rotate(-45deg);
-    text-decoration: none;
-    color: #e8e9ed;
-    font-size: 0.75em;
-    font-weight: 100;
-    color: inherit;
   }
 
   .contentArea {
@@ -483,38 +341,7 @@ a {
     left: 1vw;
   }
 
-  .informationContainer {
-    visibility: hidden;
-    display: flex;
-  }
-
-  .imgCenter {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 50vh;
-  }
-
-  .homepageGraphic {
-    width: 45vw;
-    height: 45vw;
-    transform: rotate(90deg);
-    position: relative;
-    bottom: 10vw;
-  }
-
-  .projectContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-  }
-
   .projectCard {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     margin-top: 3vw;
     margin-bottom: 2vw;
     position: relative;
@@ -523,8 +350,6 @@ a {
 
   .imageCard {
     width: 50vw;
-    box-shadow: 1px 1px 10px 1px grey;
-    transition: all 0.2s ease;
   }
 
   .projectDescription {
@@ -537,46 +362,17 @@ a {
   }
 
   .slick-dots {
-    display: block;
-    position: relative;
-    z-index: 0;
-    bottom: 0rem;
     left: 0.5vw;
   }
 
   .skillContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2rem;
-  }
-
-  .skillContainer {
     padding: 0rem;
+    overflow: visible;
     margin: 3vw 15vw 0vw 15vw;
   }
 
   .skill {
     width: 10vw;
     margin: 2vw;
-  }
-
-  .portraitContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3vw;
-  }
-
-  .portrait {
-    width: 40vw;
-    height: 40vw;
-    background-image: url("../images/headshot.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-bottom: 1vw;
-    box-shadow: 1px 1px 10px 1px grey;
   }
 }
