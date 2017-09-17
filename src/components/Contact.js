@@ -8,7 +8,7 @@ export default class Contact extends Component {
         <div className="portrait" />
         <div>
           <p>
-            307.630.2489 //{" "}
+            <a href="tel:307-630-2489">307.630.2489</a> //{" "}
             <a
               href="mailto:zacharymorse@gmail.com?subject=Hello"
               target="_top"
