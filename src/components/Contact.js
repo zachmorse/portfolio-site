@@ -19,8 +19,7 @@ export default class Contact extends Component {
           </p>
           <p style={{ textAlign: "center" }}>
             <a
-              href="https://drive.google.com/open?id=0B9Huqe5aB9FvckJIRkZ0c0tRejg"
-              target="_blank"
+              href="https://drive.google.com/file/d/0B9Huqe5aB9FvbE9aUFRsbVpOVmc/view?usp=sharing"
               rel="noopener noreferrer"
             >
               resume
